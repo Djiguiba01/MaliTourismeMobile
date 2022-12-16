@@ -1,0 +1,368 @@
+
+.ToutContainer{
+    background-color: #6c4c32;
+    padding-bottom: 15px;
+}
+/* 11111111111 */
+.butt{
+    background-color: #EFA41C;
+    font-size: 30px;
+    border: #EFA41C;
+    border-radius: 10px;
+    color: white;
+}
+/* .text{
+    padding-bottom: 10px;
+} */
+/* 22222222222222222 */
+.cardtext1{
+    padding-top: 40px;
+    color:#EFA41C;
+    text-align: center;
+    font-size: 2.5vw;
+}
+.cardtext2{
+    padding-top: 40px;
+    color: #fff;;
+    text-align: center;
+    font-size: 2.5vw;
+}
+.cardtext3{
+    padding-top: 40px;
+    color: #fff;;
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* 33333333333333333333Card */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    align-items: center;
+    background-color: #F3F5F7;
+    font-family: 'Poppins',
+        sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    color: #1B1C34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+    margin: 5% 0;
+}
+
+.card {
+    overflow: hidden;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+.card_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card_body {
+    padding: 26px 20px 36px 20px;
+}
+
+.card_title {
+    font-family: 'Merriweather',
+        serif;
+    font-weight: 900;
+    text-transform: capitalize;
+
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.card_body p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+
+}
+
+p.card_author {
+    font-size: 15px;
+    padding-top: 15px;
+
+}
+
+p.card_author a {
+    color: #1B1C34;
+    font-style: italic;
+}
+
+p.card_author a:hover {
+    font-weight: bold;
+}
+
+a.read_more {
+    color: #FFF;
+    font-size: 13px;
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    background-color: #EFA41C;
+    margin-top: 50px;
+    padding: 24px 0px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 70%;
+    transition: all .3s ease-in-out;
+}
+
+a.read_more:hover {
+    box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.15);
+    background: #404040;
+}
+
+.link {
+    position: fixed;
+    background-color: #EFA41C;
+    padding: 23px 40px;
+    right: -106px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .1s ease-in-out;
+}
+
+.link i {
+    padding-left: 7px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    background-color: black;
+}
+
+@media only screen and (max-width: 1441px) and (min-width: 1025px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .grid {
+        gap: 2%;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card_body {
+        padding: 15px;
+    }
+
+    .card_title {
+        font-size: 22px;
+        padding-bottom: 14px;
+    }
+
+    .card_body p {
+        font-size: 16px;
+    }
+
+    a.read_more {
+        background-color: #EFA41C;
+        padding: 19px 0;
+        width: 60%;
+        font-size: 11px;
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .card {
+        padding: 20px 10px;
+    }
+
+    .card_body {
+        padding: 7px;
+    }
+
+    .card_title {
+        font-size: 20px;
+        padding-bottom: 7px;
+    }
+
+    .card_body p {
+        font-size: 14px;
+    }
+
+    a.read_more {
+        background-color: #EFA41C;
+        padding: 15px 0;
+        margin-top: 20px;
+    }
+
+}
+
+/* 444444444444444 44444444*/
+.text4{
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.row{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    overflow-x: hidden;
+    padding: 5rem 0;
+}
+.row .imgWrapper{
+    overflow: hidden;
+}
+.row .imgWrapper img{
+    padding-left: 40px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.row .imgWrapper:hover img{
+    transform: scale(1.25);
+}
+.row .contentWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+.row .contentWrapper span.textWrapper{
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.row .contentWrapper span.textWrapper span{
+    display: inline-block;
+    background: #383f47;
+    width: 70px;
+    height: 5px;
+}
+.row .contentWrapper h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #383f47;
+    padding-bottom: 20px;
+}
+.row .contentWrapper p{
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+.row .contentWrapper a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #EFA41C;
+    border-radius: 15px;
+    color: #fff;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+@media (max-width: 991px){
+    .row{
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+    .row .contentWrapper{
+        padding-left: 0;
+    }
+    .text4{
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+    }
+}
+@media (max-width: 768px) {
+    .row{
+        width: 90%;
+    }
+    .row .contentWrapper h2{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .row .contentWrapper p{
+        line-height: 24px;
+    }
+    .text4{
+        width: 100%;
+        text-align: center;
+        font-size: 4vw;
+    }
+}
+@media (max-width: 575px) {
+    .row .contentWrapper span.textWrapper{
+        font-size: 18px;
+    }
+    .row .contentWrapper h2{
+        font-size: 25px;
+    }
+    .row .contentWrapper p{
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .row .contentWrapper a{
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    .text4{
+        width: 100%;
+        text-align: center;
+        font-size: 4vw;
+    }
+}

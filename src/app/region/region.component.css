@@ -1,0 +1,131 @@
+
+/* 22222222222222222222222222 */
+
+.card-body{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: #efa41c;
+
+}
+.card-title{
+    text-align: center;
+    font-weight: bold;
+}
+.card-num{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 3333333333333333333333333333333333 */
+/* Text */
+#idText{
+    margin-bottom: 30px;
+}
+#gauche{
+    margin-left: 90px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+#droite{
+    margin-right: 20px;
+    height: 10px;
+
+}
+#droite button{
+    font-size: 20px;
+    margin-right: 90px;
+    height: 70px;
+    background-color: #efa41c;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    color: white;
+
+
+}
+/* Englobe tout */
+.parent{
+    width: 100%;
+    height: 700px;
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+background-color: #6C4C32;    
+position: relative;
+}
+.parent .child{
+    width: 100px;
+    height: 100px;
+    background:#D9D9D9;
+    border-radius: 20px;
+    position: relative;
+    width: 95%;
+    height: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+@media (max-width: 400px) {
+    .parent {
+        width: 100%;
+        background-color: black;
+    }
+}
+
+
+
+body {
+ font-family: 'Lato', sans-serif;
+ background-color: #f4b927;
+}
+.wrapper {
+padding-top: 120px;
+}
+.card-img-top {
+box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.card-body{
+    text-align: center;
+    box-shadow: 0px 15px 15px -8px rgba(0,0,0,0.5)
+}
+.card-body h6 {
+font-size: 14px;
+text-transform: uppercase;
+color: deeppink;
+}
+.card-title {
+text-transform: uppercase;
+font-weight: bold;
+font-size: 24px;
+}
+
+.socials a {
+width: 40px;
+height: 40px;
+display: inline-block;
+border-radius: 50%;
+margin: 0 5px;
+}
+.socials a i {
+color: #fff;
+padding: 12px 0;
+}    
+
+.socials a:nth-child(1) {
+background: #3b5998;
+}.socials a:nth-child(2) {
+background: #ff0000;
+}.socials a:nth-child(3) {
+background: #007bb5;
+}.socials a:nth-child(4) {
+background: #ea4c89;
+}
+
+@media (max-width: 800px){
+    .mx-30{
+        margin-bottom: 30px;
+    }
+}

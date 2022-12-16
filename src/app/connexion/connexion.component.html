@@ -1,0 +1,45 @@
+<body>
+  
+    <div class="container">
+  
+          <form>
+          
+          <div class="content">
+              <h1 id="bord" class="head">Connexion</h1>
+         
+              <div class="inputBox">
+                  <input type="email" name="email" placeholder="Email" required>
+                  <input id="myPassword" type="password" name="pass" placeholder="Password" required>
+  
+                  <div class="pass">
+                      <label>Mot de passe oublié?</label>
+                      <input id="show" type="checkbox" onclick="myFunction()">
+                  </div>
+                  <input class="bt" type="submit" value="Connecter">
+  
+                  <div class="signin">
+                      <h4>Vous n'avez pas de compte?</h4>
+                      <a href="signup.html">S'inscrire</a>
+                  </div>
+  
+              </div>
+          </div>
+          </form>
+      </div>
+  
+      <!-- Mot de passe oublier -->
+      <script>
+          function myFunction() {
+              var x = document.getElementById("myPassword");
+              if(x.type ==="password") {
+                  x.type = "text";
+  
+              }else {
+                  x.type = "password" 
+              }
+          }
+      </script>
+    <!-- <script type="text/javascript" src="pass.js"></script> -->
+  
+  </body>
+  

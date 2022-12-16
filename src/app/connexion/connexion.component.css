@@ -1,0 +1,93 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url('/assets/images/background.jpg');
+	/* background: #6C4C32; */
+	font-family: 'Poppins', sans-serif;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+.content{
+	width: 400px;
+	height: 450px;
+	background: #f7f7f7;
+	box-shadow: 0 0 10px 5px #6C4C32;
+	border-radius: 5px;
+	padding: 20px;
+}
+.head{
+	font-weight: normal;
+}
+h1{
+	border-bottom: 5px solid #EFA41C;
+	padding-top: 5px;
+	width: 175px;
+}
+.inputBox{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 10px;
+}
+.inputBox input{
+	height: 60px;
+	width: 100%;
+	margin-top: 10px;
+	padding-left:15px;
+	font-size: 18px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	outline-color: #EFA41C;
+}
+.pass{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	align-items: center;
+	text-align: right;
+	color: grey;
+}
+.pass input{
+	width: 25px;
+	padding: 5px;
+}
+.pass label{
+	padding-top: 10px;
+	padding-right: 10px;
+}
+.bt{
+	background: #EFA41C;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	opacity: 0.8;
+	transition: 0.5s ease;
+}
+.bt:hover{
+	opacity: 1;
+}
+.signin{
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 20px;
+	color: grey;
+}
+.signin a{
+	color: #EFA41C;
+	font-weight: bold;
+	padding-left: 10px;
+}
