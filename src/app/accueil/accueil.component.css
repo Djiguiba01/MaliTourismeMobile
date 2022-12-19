@@ -11,6 +11,20 @@
     border-radius: 10px;
     color: white;
 }
+#text h5{
+    font-size: 47px;
+    padding-bottom: 50px;
+    color: #EFA41C;
+}
+#text p{
+    font-size: 22px;
+    padding-bottom: 90px;
+    color: white;
+}
+#text .butt{
+    margin-bottom: 30px;
+    color: white;
+}
 /* .text{
     padding-bottom: 10px;
 } */

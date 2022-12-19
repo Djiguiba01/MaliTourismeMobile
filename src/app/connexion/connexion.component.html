@@ -1,45 +1,35 @@
+
 <body>
-  
-    <div class="container">
-  
-          <form>
-          
-          <div class="content">
-              <h1 id="bord" class="head">Connexion</h1>
-         
-              <div class="inputBox">
-                  <input type="email" name="email" placeholder="Email" required>
-                  <input id="myPassword" type="password" name="pass" placeholder="Password" required>
-  
-                  <div class="pass">
-                      <label>Mot de passe oublié?</label>
-                      <input id="show" type="checkbox" onclick="myFunction()">
+
+    <div class="login-popup">
+         <div class="box">
+              <div class="img-area">
+                  <div class="img">
                   </div>
-                  <input class="bt" type="submit" value="Connecter">
-  
-                  <div class="signin">
-                      <h4>Vous n'avez pas de compte?</h4>
-                      <a href="signup.html">S'inscrire</a>
-                  </div>
-  
+                  <h1>Mali Tourisme</h1>
               </div>
-          </div>
-          </form>
-      </div>
+              <div class="form">
+                  <div class="close" routerLink="/Accueil">&times;</div>
+                  <h1>Connexion</h1>
+                  <form>
+                      <div class="form-group">
+                          <input type="text" placeholder="Email" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <input type="password" placeholder="Mot de passe" class="form-control">
+                      </div>
+                      
+                      <div class="form-group">
+                          <label >Vous n'avez pas de compte ?<br><br>
+                            <p routerLink="/inscription">S'inscrire</p>
+                              
+                          </label>
+                      </div>
+                      <button type="button" class="btn" >Connecter</button>
+                  </form>
+              </div>
+         </div>
+    </div>
   
-      <!-- Mot de passe oublier -->
-      <script>
-          function myFunction() {
-              var x = document.getElementById("myPassword");
-              if(x.type ==="password") {
-                  x.type = "text";
-  
-              }else {
-                  x.type = "password" 
-              }
-          }
-      </script>
-    <!-- <script type="text/javascript" src="pass.js"></script> -->
   
   </body>
-  

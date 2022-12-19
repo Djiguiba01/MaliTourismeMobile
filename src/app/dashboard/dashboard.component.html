@@ -12,8 +12,8 @@
             <li routerLink="/ajout"><img src="assets/dashboard/dashboard (2).png" alt="" >&nbsp; <span>Ajouter Région</span> </li>
             <li routerLink="/misajout"><img src="assets/dashboard/school.png" alt="">&nbsp;<span >Modifier Région</span> </li>
             <!-- <li ><img src="assets/dashboard/dashboard/reading-book (1).png" alt="">&nbsp;<span routerLink="/Accueil">Accueil</span> </li> -->
-            <li><img src="assets/dashboard/payment.png" alt="">&nbsp;<span>Income</span> </li>
-            <li><img src="assets/dashboard/help-web-button.png" alt="">&nbsp; <span>Help</span></li>
+            <!-- <li><img src="assets/dashboard/payment.png" alt="">&nbsp;<span>Income</span> </li> -->
+            <!-- <li><img src="assets/dashboard/help-web-button.png" alt="">&nbsp; <span>Help</span></li> -->
             <li><img src="assets/dashboard/settings.png" alt="">&nbsp;<span>Déconnexion</span> </li>
         </ul>
     </div>
@@ -75,7 +75,7 @@
             <div class="content-2">
                 <div class="recent-payments">
                     <div class="title">
-                        <h2>Nombre Regions</h2>
+                        <h2>Utilisateurs</h2>
                         <a href="#" class="btn">Mali</a>
                     </div>
                     <table>
@@ -125,7 +125,7 @@
                 </div>
                 <div class="new-students">
                     <div class="title">
-                        <h2>Utilisateurs</h2>
+                        <h2>Nombre Regions</h2>
                         <a href="#" class="btn">Voir</a>
                     </div>
                     <table>
@@ -156,8 +156,90 @@
                         </tr>
 
                     </table>
+                      <!-- Next en bas du Tableau à partir de 10 personnes -->
+                       <!-- <div class="tablesucrol"> <pagination-controls (pageChange)="a = $event"> </pagination-controls> </div> -->
+
                 </div>
             </div>
+
+
+            
+    <!-- bxbx -->
+    <div class="recent--patients">
+        <div class="title">
+            <h2 class="section--title">Détails Regions</h2>
+            <button class="add" routerLink="/ajout"><i class="ri-add-line"></i>Ajourter Regions</button>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date in</th>
+                        <th>Gender</th>
+                        <th>Age</th>
+                        <th>Status</th>
+                        <th>Settings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cameron Williamson</td>
+                        <td>30/07/2022</td>
+                        <td>Male</td>
+                        <td>61kg</td>
+                        <td class="pending">pending</td>
+                        <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>George Washington</td>
+                        <td>30/07/2022</td>
+                        <td>Male</td>
+                        <td>54kg</td>
+                        <td class="confirmed">Confirmed</td>
+                        <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>John Adams</td>
+                        <td>29/07/2022</td>
+                        <td>Male</td>
+                        <td>56kg</td>
+                        <td class="confirmed">Confirmed</td>
+                        <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>Thomas Jefferson</td>
+                        <td>29/07/2022</td>
+                        <td>Male</td>
+                        <td>11kg</td>
+                        <td class="rejected">Rejected</td>
+                        <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>James Madison</td>
+                        <td>29/07/2022</td>
+                        <td>Male</td>
+                        <td>69kg</td>
+                        <td class="confirmed">Confirmed</td>
+                        <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>Andrew Jackson</td>
+                        <td>28/07/2022</td>
+                        <td>Male</td>
+                        <td>88kg</td>
+                        <td class="confirmed">Confirmed</td>
+                        <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+    <!-- bvbbvbv -->
+        </div> 
+    </div>
+
 </body>
+
+
+<!-- <app-footer></app-footer> -->

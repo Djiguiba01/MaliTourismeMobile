@@ -269,3 +269,54 @@ td {
         display: none;
     }
 }
+
+
+
+
+/* recent--patients */
+
+.recent--patients {
+    margin-bottom: 20px;
+}
+
+.table {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+td,
+th {
+    padding-block: 10px;
+}
+
+.edit {
+    color: #70d7a5;
+    margin-right: 10px;
+}
+
+.delete {
+    color: #e86786;
+}
+
+.pending {
+    color: #f1d243;
+}
+
+.confirmed {
+    color: #70d7a5;
+}
+
+.rejected {
+    color: #e86786;
+}
+
