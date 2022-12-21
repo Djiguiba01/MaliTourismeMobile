@@ -1,3 +1,5 @@
+import { AjoutPaysComponent } from './ajout-pays/ajout-pays.component';
+import { DetailregionComponent } from './detailregion/detailregion.component';
 import { AjoutAdminComponent } from './ajout-admin/ajout-admin.component';
 import { MenuComponent } from './menu/menu.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -24,7 +26,10 @@ const routes: Routes = [
   { path: 'ajout', component: AjoutregionComponent },
   { path: 'misajout', component: ModregionComponent },
   { path: 'ajoutadmin', component: AjoutAdminComponent },
-
+  { path: 'detailregion', component: DetailregionComponent },
+  { path: 'detailregion/:id', component: DetailregionComponent },
+  { path: 'ajoutpays', component: AjoutPaysComponent },
+  
 ]
 
 @NgModule({

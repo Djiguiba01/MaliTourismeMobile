@@ -1,5 +1,9 @@
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { AppComponent } from './app.component';
 import { AccueilComponent } from './accueil/accueil.component';
@@ -16,6 +20,7 @@ import { AjoutAdminComponent } from './ajout-admin/ajout-admin.component';
 import { FooterComponent } from './footer/footer.component';
 import { DetailregionComponent } from './detailregion/detailregion.component';
 import { ProfilComponent } from './profil/profil.component';
+import { AjoutPaysComponent } from './ajout-pays/ajout-pays.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +37,16 @@ import { ProfilComponent } from './profil/profil.component';
     AjoutAdminComponent,
     FooterComponent,
     DetailregionComponent,
-    ProfilComponent
+    ProfilComponent,
+    AjoutPaysComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    NgxPaginationModule,
+    // Ng2SearchPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

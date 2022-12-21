@@ -123,42 +123,32 @@
                         </tr>
                     </table>
                 </div>
+
                 <div class="new-students">
                     <div class="title">
-                        <h2>Nombre Regions</h2>
-                        <a href="#" class="btn">Voir</a>
+                        <h2>Les Pays</h2>
+                        <a routerLink="/ajoutpays" class="btn">Ajouter Pays</a>
                     </div>
-                    <table>
-                        <tr>
+                    <table >
+                        <tr >
                             <th>Profil</th>
                             <th>Nom</th>
                             <th>Action</th>
                         </tr>
-                        <tr>
+                        <tr *ngFor="let pays of voirPays">
+                            <td><img src="assets/dashboard/user.png" alt=""></td>
+                            <td >{{pays.nompays}}</td>
+                            <!-- <td><img src="assets/dashboard/info.png" alt=""></td> -->
+                        </tr>
+                        
+                        <!-- <tr>
                             <td><img src="assets/dashboard/user.png" alt=""></td>
                             <td>John Steve Doe</td>
                             <td><img src="assets/dashboard/info.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td><img src="assets/dashboard/user.png" alt=""></td>
-                            <td>John Steve Doe</td>
-                            <td><img src="assets/dashboard/info.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td><img src="assets/dashboard/user.png" alt=""></td>
-                            <td>John Steve Doe</td>
-                            <td><img src="assets/dashboard/info.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td><img src="assets/dashboard/user.png" alt=""></td>
-                            <td>John Steve Doe</td>
-                            <td><img src="assets/dashboard/info.png" alt=""></td>
-                        </tr>
+                        </tr> -->
 
                     </table>
-                      <!-- Next en bas du Tableau à partir de 10 personnes -->
-                       <!-- <div class="tablesucrol"> <pagination-controls (pageChange)="a = $event"> </pagination-controls> </div> -->
-
+                 
                 </div>
             </div>
 

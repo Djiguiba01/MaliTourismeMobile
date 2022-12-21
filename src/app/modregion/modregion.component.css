@@ -23,6 +23,22 @@
         border-radius: 10px;
         /* // box-shadow: inset -2px 2px 2px white; */
     }
+    .close{
+        font-size: 40px;
+        color: white;
+        text-align: right;
+    }
+
+    select{
+        background-color: white;
+        width: 270px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    option {
+        background-color: black;
+        color: white;
+    }
     
     
     .form-title{

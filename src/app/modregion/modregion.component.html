@@ -1,15 +1,17 @@
 <div class="body">
 
     <div class="container">
+      <div class="close" routerLink="/Dashboard">&times;</div>
+
       <h1 class="form-title">Modifier une région</h1>
       <form action="#">
         <div class="main-user-info">
           <div class="user-input-box">
             <label for="fullName">Pays</label>
-            <input type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter le pays"/>
+            <select>
+              <option value="0" >Pays de la region:</option>
+              <option value="1"class="monhover">Audi</option>
+            </select>
           </div>
           <div class="user-input-box">
             <label for="username">Région</label>

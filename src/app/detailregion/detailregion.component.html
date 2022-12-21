@@ -1,12 +1,42 @@
- <!-- 3333333333333333333333333 -->
- <div class="parent">
-    <div class="d-flex bd-highlight" id="idText">
-        <div class="p-2 flex-grow-1 bd-highlight" id="gauche">LES REGIONS</div>
-        <div class="p-2 bd-highlight" id="droite" routerLink="ajoutregion"><button>AJOUTER REGION</button></div>
-    </div>
-            <div class="child">
-                <!-- ddnknsdqk -->
-                
-                <!-- nsqjnsqjqs -->
-            </div>
-        </div>
+
+<app-menu></app-menu>
+
+<div class="toutdetail">
+    
+    <div class="right">
+        <p><button routerLink="/Region">RETOUR</button></p>
+      </div>
+      <div class="left">
+        <p>DESCRIPTION</p>
+      </div>
+<div *ngFor="let affiche of detailRegion">
+  <div class="imgdetail" >
+    <img  src="../../assets/images/{{affiche.images}}" alt="Girl in a jacket" width="96%" height="350">
+  </div >
+</div>
+
+      <div class="regionplus" >
+      <p class="nomregion" *ngFor="let affiche of detailRegion"> {{affiche.nomregions}}</p> 
+      <p class="info" *ngFor="let affiche of detailRegion">Superficie : <span>{{affiche.superficieregion}}</span></p> 
+      <p class="info" *ngFor="let affiche of detailRegion">Population : <span>ggg</span></p>
+      <p class="info" *ngFor="let affiche of detailRegion">Langue Parlé : <span>{{affiche.languemregion}}</span></p>
+      <p class="info" *ngFor="let affiche of detailRegion">Activité Région : <span>{{affiche.activiterregion}}</span></p>
+      <p class="info" *ngFor="let affiche of detailRegion">Description : <span>{{affiche.description}}</span></p>
+  </div>
+</div>
+
+<!-- <TextArea name='txtArea' rows="3" cols="50">Textarea Data</TextArea> -->
+
+
+<!-- <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div> -->
+  <div class="row">
+  <div class=" col-6 mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Commentaire :</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" col="3" ></textarea>
+  </div>
+</div>
+
+

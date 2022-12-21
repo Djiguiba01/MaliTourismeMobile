@@ -1,3 +1,4 @@
+import { DetailregionService } from './../Services/detailregion.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./detailregion.component.css']
 })
 export class DetailregionComponent {
+  detailRegion : any;
+  constructor(private service : DetailregionService){}
+
+  ngOnInit(): void {
+  this.service.getRegions().subscribe(data=>{
+  this.detailRegion=data;
+});
+  }
 
 }

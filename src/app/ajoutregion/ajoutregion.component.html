@@ -1,69 +1,51 @@
 <div class="body">
 
-    <div class="container">
-      <h1 class="form-title">Ajouter une région</h1>
-      <form action="#">
-        <div class="main-user-info">
-          <div class="user-input-box">
-            <label for="fullName">Pays</label>
-            <input type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter le pays"/>
-          </div>
-          <div class="user-input-box">
-            <label for="username">Région</label>
-            <input type="text"
-                    id="username"
-                    name="username"
-                    placeholder="Enter région"/>
-          </div>
-          
-          <div class="user-input-box">
-            <label for="email">Population</label>
-            <input type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Nombre d'habitant"/>
-          </div>
-          <div class="user-input-box">
-            <label for="phoneNumber">Langue parlé</label>
-            <input type="text"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    placeholder="Enter langue parlé"/>
-          </div>
-          <div class="user-input-box">
-            <label for="password">Activité</label>
-            <input type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Domaine d'activité"/>
-          </div>
-          <div class="user-input-box">
-            <label for="confirmPassword">Superficie</label>
-            <input type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    placeholder="Superficie de le région"/>
-          </div>
-  
-          <div class="user-input-box">
-            <label for="password">Code</label>
-            <input type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Code région"/>
-          </div>
-          <div class="user-input-box">
-            <label for="confirmPassword">Année</label>
-            <input type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    placeholder="Année"/>
-          </div>
+  <div class="container">
+    <div class="close" routerLink="/Dashboard">&times;</div>
+
+    <h1 class="form-title">Ajouter une région</h1>
+    <form action="#">
+      <div class="main-user-info">
+        <div class="user-input-box">
+          <label for="fullName">Pays</label>
+          <select>
+            <option value="0" >Donnez pays:</option>
+            <option value="1"class="monhover">Audi</option>
+          </select>
         </div>
-        <!-- <div class="gender-details-box">
+
+        <div class="user-input-box">
+          <label for="username">Région</label>
+          <input type="text" id="username" name="username" placeholder="Enter région" />
+        </div>
+
+        <div class="user-input-box">
+          <label for="email">Population</label>
+          <input type="email" id="email" name="email" placeholder="Nombre d'habitant" />
+        </div>
+        <div class="user-input-box">
+          <label for="phoneNumber">Langue parlé</label>
+          <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter langue parlé" />
+        </div>
+        <div class="user-input-box">
+          <label for="password">Activité</label>
+          <input type="password" id="password" name="password" placeholder="Domaine d'activité" />
+        </div>
+        <div class="user-input-box">
+          <label for="confirmPassword">Superficie</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Superficie de le région" />
+        </div>
+
+        <div class="user-input-box">
+          <label for="password">Code</label>
+          <input type="password" id="password" name="password" placeholder="Code région" />
+        </div>
+        <div class="user-input-box">
+          <label for="confirmPassword">Année</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Année" />
+        </div>
+      </div>
+      <!-- <div class="gender-details-box">
           <span class="gender-title">Gender</span>
           <div class="gender-category">
             <input type="radio" name="gender" id="male">
@@ -74,10 +56,9 @@
             <label for="other">Other</label>
           </div>
         </div> -->
-        <div class="form-submit-btn">
-          <input type="submit" value="Ajouter region">
-        </div>
-      </form>
-    </div>
+      <div class="form-submit-btn">
+        <input type="submit" value="Ajouter region">
+      </div>
+    </form>
   </div>
-  
+</div>

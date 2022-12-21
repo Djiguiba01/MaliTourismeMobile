@@ -50,19 +50,30 @@
     </div>
 
     <!-- 3333333333333333333333333 -->
-    <div class="parent">
-<div class="d-flex bd-highlight" id="idText">
-    <div class="p-2 flex-grow-1 bd-highlight" id="gauche">LES REGIONS</div>
-    <div class="p-2 bd-highlight" id="droite" routerLink="ajoutregion"><button>AJOUTER REGION</button></div>
-</div>
-        <div class="child">
-            <!-- ddnknsdqk -->
-            
-            <!-- nsqjnsqjqs -->
+<div class="toutregion1" >
+
+    <div class="toutregion2" > 
+        <span class="text">Découvrir les régions du mali</span>
+
+<div class="index-post" >
+
+    <div class="contener"  *ngFor="let affiche of Region | paginate: {itemsPerPage:8, currentPage: p}" >
+        <div class="image-contener">
+            <img src= "../../assets/images/{{affiche.images}}"alt="" >
+        </div>
+        <div class="meta-contener" >
+            <h2 class="title"  >{{affiche.nomregions}}</h2>
+    <span class="desc">{{affiche.description}}</span>
+        </div>
+        <div class="button-contener">
+            <a routerLink="/detailregion/{{affiche.id_region}}" class="button">Voir Plus →</a>
         </div>
     </div>
 
+</div>
+</div>
+<div class="paginat"><pagination-controls (pageChange)="p=$event" nextLabel="Suivants" previousLabel="Précédents"></pagination-controls>
+</div>
+</div>
 
-
-    <!-- <img src="assets/images/background.jpg" class="img-fluid" alt="Responsive image"> -->
-    <!-- <img src="assets/images/background.jpg" class="img-rounded" alt="Cinque Terre"> -->
+<app-footer></app-footer>
